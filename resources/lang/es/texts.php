@@ -1,0 +1,7 @@
+<?php
+
+// es-ES
+
+return [
+
+];

@@ -1,0 +1,1 @@
+<a  href="{{ route('dashboard', [ Request::Segment(1) ]) }}" class="dockmenu-item dropup @if(Request::segment(2) == '' ) active @endif" wire:navigate onclick="window.bloqueiaPagina(true)"><i class="fas fa-desktop"></i> <span class="dockmenu-label">Dashboard</span></a>

@@ -1,0 +1,102 @@
+#context-menu {
+    display: none;
+    position: absolute;
+    z-index: 999999999;
+
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+
+    padding: 6px 0;
+    min-width: 180px;
+    width: auto;
+    max-width: 350px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+#context-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#context-menu ul li {
+    padding: 6px 12px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.1s ease-in-out;
+}
+
+#context-menu ul li:not(.disabled):not(.close-item):hover {
+    background-color: #4a4a4a;
+}
+
+#context-menu ul li.disabled {
+    color: #888888;
+    cursor: default;
+}
+
+#context-menu ul li.disabled:hover {
+    background-color: transparent;
+}
+
+#context-menu hr {
+    border: none;
+    border-top: 1px solid #555555;
+    margin: 4px 0;
+}
+
+#context-menu ul li.close-item {
+    color: #cccccc;
+}
+#context-menu ul li.close-item:hover {
+    background-color: #4a4a4a;
+}
+
+#context-menu ul li.delete-item {
+    color: #FF6B6B;
+    /* font-weight: 900; */
+    /* padding-left: 5px; */
+}
+
+#context-menu ul li.delete-item:not(.disabled):hover {
+    background-color: #9e2a2b;
+    color: #ffffff;
+}
+
+#context-menu ul li.delete-item.disabled {
+    color: #a87070; /* Vermelho bem apagado */
+    cursor: default;
+}
+
+#context-menu ul li.delete-item.disabled:hover {
+    background-color: transparent;
+    color: #a87070; /* Mantém a cor apagada */
+}
+
+
+#context-menu ul li.reprocess-item {
+    color: dodgerblue;
+    /* font-weight: 900; */
+    /* padding-left: 5px; */
+}
+
+#context-menu ul li.reprocess-item:not(.disabled):hover {
+    background-color: #0058b3;
+    color: #ffffff;
+}
+
+#context-menu ul li.reprocess-item.disabled {
+    color: rgba(30, 144, 255, 0.46);
+    cursor: default;
+}
+
+#context-menu ul li.reprocess-item.disabled:hover {
+    background-color: transparent;
+    color: rgba(30, 144, 255, 0.46);
+}

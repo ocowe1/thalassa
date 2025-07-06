@@ -1,7 +1,0 @@
-<?php
-
-// pt-BR
-
-return [
-
-];

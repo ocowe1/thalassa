@@ -1,1 +1,0 @@
-<a href="{{ route('documentos', [ Request::Segment(1) ]) }}" class="dockmenu-item dropup @if(Request::segment(2) == 'documentos' ) active @endif" wire:navigate onclick="window.bloqueiaPagina(true)"><i class="fa-regular fa-folder-open"></i> <span class="dockmenu-label">@lang('messages.documentos')</span></a>
